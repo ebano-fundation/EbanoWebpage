@@ -35,24 +35,23 @@ header {
 /*//////////////////////////////// Navbar /////////////////////////////////////*/
 
 .nabar {
-    width: fit-content;
+    position:fixed;
     height: 100px;
+    z-index:1;
 }
     
-
     .nabar logo {
         position: relative;
     }
 
-
     .nabar #donate {
         position: absolute;
-        left: 90%;
-        top: 50px;
-        right: 50px;
+        top: 40px;
+        width:200px;
         border-radius: 25px;
-        color: white;
-        font-size:15px;
+        color: aliceblue;
+        font-size:20px;
+        transform:translateX(1650px);
     }
         .nabar #donate span {
             cursor: pointer;
@@ -127,7 +126,7 @@ header {
             font-family: 'Helvetica Neue','Franklin Gothic Medium', 'Arial Narrow';
         }
 
-    #sites #Missions {
+    #sites #charity {
         position: relative;
         left:-5%;
         top: 15px;
@@ -136,7 +135,7 @@ header {
         font-family: 'Times New Roman', 'Times', 'serif';
         font-size: x-large;
     }
-        #sites #Missions:hover {
+        #sites #charity:hover {
             cursor: pointer;
             opacity: 0;
             /*background-color: rgb(159 159 159 / 0.60);*/
@@ -375,14 +374,76 @@ iframe {
 }
     .photogalery imag1 {
     }
+        .photogalery imag1:hover {
+
+        }
+        
+        .photogalery imag1:before {
+        }
+
+        .photogalery imag1:after {
+        }
+
     .photogalery imag2 {
     }
+
+        .photogalery imag2:hover {
+
+        }
+        
+        .photogalery imag2:before {
+        }
+
+        .photogalery imag2:after {
+        }
+
     .photogalery imag3 {
     }
+        .photogalery imag3:hover {
+        }
+
+        .photogalery imag3:before {
+        }
+
+        .photogalery imag3:after {
+        }
+
+
     .photogalery imag4 {
     }
+
+        .photogalery imag4:hover {
+        }
+
+        .photogalery imag4:before {
+        }
+
+        .photogalery imag4:after {
+        }
+
+
+
     .photogalery imag5 {
     }
+        .photogalery imag5:hover {
+        }
+        
+        .photogalery imag5:before {
+        }
+
+        .photogalery imag5:after {
+        }
+
+
     .photogalery imag6 {
     }
+
+        .photogalery imag6:hover {
+        }
+
+        .photogalery imag6:before {
+        }
+
+        .photogalery imag6:after {
+        }
     

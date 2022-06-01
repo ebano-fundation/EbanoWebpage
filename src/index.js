@@ -26,16 +26,19 @@ root.render(
     <React.StrictMode>
 
         <header>
-            <ul className='nabar'>
+            <div className='nabar'>
             <img src={logo} className="nabar App-logo" alt="logo" />
             <div id='sites'>
-                <strong id="home" onClick={gohome()} onMouseOver={deplegateHome()} >Home</strong>
+                    {/*
+                    <strong id="home" onClick={gohome()} onMouseOver={deplegateHome()} >Home</strong>
                 <strong id="Abbout" onClick={goAbbout()} onMouseOver={deplegateAbbout()}>Abbout</strong>
-                <strong id="Missions" onClick={goMissions()} onMouseOver={deplegateMissions()}>Missions</strong>
+                <strong id="charity" onClick={goMissions()} onMouseOver={deplegateMissions()}>Missions</strong
+                    */}
             </div>
                 <Button id="donate" variant="success" onClick={donations()} ><span>Donate</span></Button>
-            </ul>
+            </div>
         </header>
+
         <App />
         <footer className='foter' >
             <img src={logo} className="foterlogo" alt="logo" />
