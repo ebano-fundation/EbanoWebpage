@@ -1,0 +1,388 @@
+/*//////////////////////////////// DEfault css  design  /////////////////////////////////////*/
+
+.App {
+    position:relative;
+    top:-16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        border-radius: 30px;
+        margin: 30px;
+        padding: 20%;
+        position: absolute;
+    }
+}
+
+header {
+    background-color: white;
+}
+
+
+
+
+
+/*//////////////////////////////// Navbar /////////////////////////////////////*/
+
+.nabar {
+    width: fit-content;
+    height: 100px;
+}
+    
+
+    .nabar logo {
+        position: relative;
+    }
+
+
+    .nabar #donate {
+        position: absolute;
+        left: 90%;
+        top: 50px;
+        right: 50px;
+        border-radius: 25px;
+        color: white;
+        font-size:15px;
+    }
+        .nabar #donate span {
+            cursor: pointer;
+            display:inline-block;
+            position:relative;
+            transition:0.5s;
+        }
+        .nabar #donate:hover span {
+            padding-right: 25px;
+        }
+            .nabar #donate span::after {
+            content:/;
+            position:absolute;
+            opacity:0;
+            top:0;
+            right:-20px;
+            transition:0.5s;
+            }
+
+        .nabar #donate:hover {
+            transition: 0.5s;
+        }
+
+            .nabar #donate:hover span:after {
+                opacity: 1;
+                right: 0;
+            }
+
+
+#sites {
+    position: absolute;
+    left: 47%;
+    top: 22px;
+    right: 0px;
+    width:fit-content
+
+}
+
+    #sites #home {
+        position: relative;
+        left: -30%;
+        top: 15px;
+        right: 0px;
+        color: black;
+        font-family: 'Times New Roman', 'Times', 'serif';
+        font-size:x-large;
+    }
+
+        #sites #home:hover {
+            cursor: pointer;
+            opacity: 0;
+            /*background-color: rgb(159 159 159 / 0.60);*/
+            transition: 0.7s;
+            font-family: 'Helvetica Neue','Franklin Gothic Medium', 'Arial Narrow';
+        }
+
+    #sites #Abbout {
+        position: relative;
+        left: -18%;
+        top: 15px;
+        right: 0px;
+        color: black;
+        font-family: 'Times New Roman', 'Times', 'serif';
+        font-size: x-large;
+    }
+
+        #sites #Abbout:hover {
+            cursor: pointer;
+            opacity: 0;
+            /*background-color: rgb(159 159 159 / 0.60);*/
+            transition: 0.7s;
+            font-family: 'Helvetica Neue','Franklin Gothic Medium', 'Arial Narrow';
+        }
+
+    #sites #Missions {
+        position: relative;
+        left:-5%;
+        top: 15px;
+        right: 0px;
+        color: black;
+        font-family: 'Times New Roman', 'Times', 'serif';
+        font-size: x-large;
+    }
+        #sites #Missions:hover {
+            cursor: pointer;
+            opacity: 0;
+            /*background-color: rgb(159 159 159 / 0.60);*/
+            transition: 0.7s;
+            font-family: 'Helvetica Neue','Franklin Gothic Medium', 'Arial Narrow';
+        }
+
+
+.transition {
+    position: relative;
+    transform: translateY(-70%);
+}
+
+    .transition .top-image {
+        width: 100%;
+        z-index: 25;
+    }
+
+.transition-down {
+    position: relative;
+    top:210px;
+    transform: rotate(180deg);
+    width:fit-content;
+}
+
+    .transition-down {
+        width: 100%;
+        z-index: 25;
+    }
+    .transition-down svg-down {
+    }
+    /*//////////////////// footer //////////////////////*/
+    footer {
+        background-color: rgb(0, 0, 0, 0.38);
+        width: 100%;
+        position:relative;
+        transform:translateY(100%)
+    }
+    .foter .foterlogo {
+        position:sticky;
+        height:88px;
+    }
+
+    .foter .left {
+        position: relative;
+        left: 500px;
+        top: 0px;
+    }
+
+.foter .centrl {
+    position: relative;
+    left: 1500px;
+    top: -110px;
+    width:stretch
+}
+
+
+/*/////////////////////////////  card  //////////////////////////////*/
+
+body {
+    position: relative;
+    top: -20px;
+}
+
+
+
+                             /* duty cards*/
+.container {
+    position: relative;
+    left: -20%;
+    top: 30%;
+    transform: translate(-10%, 20%);
+    height: 600px;
+    width: 400px;
+    background: #f2f2f2;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 20px 8px #d0d0d0;
+    display:grid;
+}
+
+h3 {
+    font-size:30px;
+}
+
+
+.duty {
+    position: relative;
+    width: 40%;
+    transform:translateY(20%);
+    background: url(../imgs/do-03.png) 50%;
+    background-size:50%;
+    background-repeat:no-repeat;
+    height: auto;
+    padding: 60px;
+}
+    .duty t1 {
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Fredoka One', cursive;
+    }
+    .duty h3 {
+        width:auto;
+        font-size:20px;
+    }
+
+
+
+.Mission {
+    position:relative;
+    display: grid;
+    grid-template-columns: 40% 40% 40%;
+    right:0%;
+    align-content: center;
+    transform:translateY(-30%);
+    width:max-content;
+    height:max-content;
+}
+
+
+    .Mission container {
+        font-size: 30px;
+        position: relative;
+        padding: 10px;
+        font-family: 'Merriweather', serif;
+        height: max-content;
+    }
+
+    .Mission content h1 {
+        font-weight: 900;
+        text-align: center;
+    }
+    .Mission content h3 {
+        font-weight: 300;
+    }
+    .Mission .container .flap {
+        width: 100%;
+        height: 100%;
+    }
+        .Mission .container .flap::before {
+            position: absolute;
+            content: "";
+            height: 120%;
+            width: 100%;
+            left: 0%;
+            transform:translateY(-50%);
+            border-radius: 3%;
+            background: url("../imgs//IMG_1399.jpeg");
+            background-repeat: no-repeat;
+            transition: 1.5s;
+        }
+
+    .Mission  .container:hover .flap::before {
+        transform: translateX(-700px);
+    }
+    .Mission .container .flap2 {
+        width: 150%;
+        height: 150%;
+    }
+        .Mission .container .flap2::before {
+            position: absolute;
+            content: "";
+            height: 120%;
+            width: 120%;
+            left: 0%;
+            transform: translateY(-60%);
+            transform: translateY(-56%);
+            border-radius: 3%;
+            background: url("../imgs//IMG_2844.jpeg");
+            background-repeat: no-repeat;
+            transition: 1.5s;
+        }
+
+    .Mission .container:hover .flap2::before {
+        transform: translateX(-700px);
+    }
+    .Mission .container .flap3 {
+        width: 100%;
+        height: 100%;
+    }
+        .Mission .container .flap3::before {
+            position: absolute;
+            content: "";
+            height: 120%;
+            width: 100%;
+            left: 0%;
+            transform: translateY(-60%);
+            border-radius: 3%;
+            background: url("../imgs/IMG_2846.jpeg");
+            background-repeat: no-repeat;
+            transition: 1.5s;
+        }
+    .Mission  .container:hover .flap3::before {
+        transform: translateX(-700px);
+    }
+    .content t1 {
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Fredoka One', cursive;
+    }
+    .content  h5 {
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Fredoka One', cursive;
+    }
+
+.recent-charity {
+    position: relative;
+    transform: translateY(20%);
+    z-index: 0;
+}
+
+
+
+/*////////////////////i frame for youtube video ///////////////////////////*/
+iframe {
+    width:100%;
+    height:850px;
+}
+
+
+/***************************** photogalery ***********************************/
+.phototeca {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-content: center;
+    top:280px;
+    width:100%;
+    border-radius:20%;
+}
+.phototeca .imageshower {
+}
+.photogalery {
+}
+    .photogalery imag1 {
+    }
+    .photogalery imag2 {
+    }
+    .photogalery imag3 {
+    }
+    .photogalery imag4 {
+    }
+    .photogalery imag5 {
+    }
+    .photogalery imag6 {
+    }
+    
