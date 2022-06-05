@@ -35,114 +35,115 @@ header {
 /*//////////////////////////////// Navbar /////////////////////////////////////*/
 
 .nabar {
-    position:fixed;
+    position: fixed;
+    z-index: 2;
     height: 100px;
-    z-index:1;
 }
-    
-    .nabar logo {
-        position: relative;
+| .nabar #sites App-logo {
+    position: relative;
+  }
+
+  .nabar #sites {
+    position: absolute;
+    left: 47%;
+    top: 12px;
+    width: fit-content;
+  }
+
+  .nabar #sites #home {
+    position: relative;
+    left: 1260px;
+    top: 30px;
+    color: black;
+    font-family: 'Times New Roman', 'Times', 'serif';
+    font-size: x-large;
+  }
+
+    .nabar #sites #home:hover {
+        cursor: pointer;
+        opacity: 0;
+        /*background-color: rgb(159 159 159 / 0.60);*/
+        transition: 0.7s;
+        font-family: 'Helvetica Neue','Franklin Gothic Medium', 'Arial Narrow';
     }
 
-    .nabar #donate {
+    .nabar #sites #Abbout {
+        position: relative;
+        left: 1290px;
+        top: 30px;
+        right: 0px;
+        color: black;
+        font-family: 'Times New Roman', 'Times', 'serif';
+        font-size: x-large;
+    }
+
+    .nabar #sites #Abbout:hover {
+        cursor: pointer;
+        opacity: 0;
+        /*background-color: rgb(159 159 159 / 0.60);*/
+        transition: 0.7s;
+        font-family: 'Helvetica Neue','Franklin Gothic Medium', 'Arial Narrow';
+    }
+
+    .nabar #sites #charity {
+        position: relative;
+        left: 1320px;
+        top: 30px;
+        right: 0px;
+        color: black;
+        font-family: 'Times New Roman', 'Times', 'serif';
+        font-size: x-large;
+    }
+
+    .nabar #sites #charity:hover {
+        cursor: pointer;
+        opacity: 0;
+        /*background-color: rgb(159 159 159 / 0.60);*/
+        transition: 0.7s;
+        font-family: 'Helvetica Neue','Franklin Gothic Medium', 'Arial Narrow';
+    }
+
+    .nabar #sites #donate {
         position: absolute;
-        top: 40px;
-        width:200px;
+        top: 20px;
+        width: 200px;
         border-radius: 25px;
         color: aliceblue;
-        font-size:20px;
-        transform:translateX(1650px);
+        font-size: 20px;
+        transform: translateX(1400px);
     }
-        .nabar #donate span {
+        .nabar #sites #donate span {
             cursor: pointer;
-            display:inline-block;
-            position:relative;
-            transition:0.5s;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
         }
-        .nabar #donate:hover span {
+        
+        .nabar #sites #donate:hover span {
             padding-right: 25px;
         }
-            .nabar #donate span::after {
-            content:/;
-            position:absolute;
-            opacity:0;
-            top:0;
-            right:-20px;
-            transition:0.5s;
-            }
-
-        .nabar #donate:hover {
+        
+        .nabar #sites #donate span::after {
+            content: /;
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
             transition: 0.5s;
         }
 
-            .nabar #donate:hover span:after {
+        .nabar #sites #donate:hover {
+            transition: 0.5s;
+        }
+
+            .nabar #sites #donate:hover span:after {
                 opacity: 1;
                 right: 0;
             }
 
 
-#sites {
-    position: absolute;
-    left: 47%;
-    top: 22px;
-    right: 0px;
-    width:fit-content
 
-}
-
-    #sites #home {
-        position: relative;
-        left: -30%;
-        top: 15px;
-        right: 0px;
-        color: black;
-        font-family: 'Times New Roman', 'Times', 'serif';
-        font-size:x-large;
-    }
-
-        #sites #home:hover {
-            cursor: pointer;
-            opacity: 0;
-            /*background-color: rgb(159 159 159 / 0.60);*/
-            transition: 0.7s;
-            font-family: 'Helvetica Neue','Franklin Gothic Medium', 'Arial Narrow';
-        }
-
-    #sites #Abbout {
-        position: relative;
-        left: -18%;
-        top: 15px;
-        right: 0px;
-        color: black;
-        font-family: 'Times New Roman', 'Times', 'serif';
-        font-size: x-large;
-    }
-
-        #sites #Abbout:hover {
-            cursor: pointer;
-            opacity: 0;
-            /*background-color: rgb(159 159 159 / 0.60);*/
-            transition: 0.7s;
-            font-family: 'Helvetica Neue','Franklin Gothic Medium', 'Arial Narrow';
-        }
-
-    #sites #charity {
-        position: relative;
-        left:-5%;
-        top: 15px;
-        right: 0px;
-        color: black;
-        font-family: 'Times New Roman', 'Times', 'serif';
-        font-size: x-large;
-    }
-        #sites #charity:hover {
-            cursor: pointer;
-            opacity: 0;
-            /*background-color: rgb(159 159 159 / 0.60);*/
-            transition: 0.7s;
-            font-family: 'Helvetica Neue','Franklin Gothic Medium', 'Arial Narrow';
-        }
-
+            /*transition*/
 
 .transition {
     position: relative;
@@ -151,7 +152,7 @@ header {
 
     .transition .top-image {
         width: 100%;
-        z-index: 25;
+        z-index: 1;
     }
 
 .transition-down {
@@ -163,7 +164,7 @@ header {
 
     .transition-down {
         width: 100%;
-        z-index: 25;
+        z-index: 1;
     }
     .transition-down svg-down {
     }
@@ -249,13 +250,10 @@ h3 {
     position:relative;
     display: grid;
     grid-template-columns: 40% 40% 40%;
-    right:0%;
-    align-content: center;
     transform:translateY(-30%);
     width:max-content;
     height:max-content;
 }
-
 
     .Mission container {
         font-size: 30px;
@@ -265,21 +263,14 @@ h3 {
         height: max-content;
     }
 
-    .Mission content h1 {
-        font-weight: 900;
-        text-align: center;
-    }
-    .Mission content h3 {
-        font-weight: 300;
-    }
     .Mission .container .flap {
         width: 100%;
-        height: 100%;
+        height: max-content;
     }
         .Mission .container .flap::before {
             position: absolute;
             content: "";
-            height: 120%;
+            height: 110%;
             width: 100%;
             left: 0%;
             transform:translateY(-50%);
@@ -299,10 +290,9 @@ h3 {
         .Mission .container .flap2::before {
             position: absolute;
             content: "";
-            height: 120%;
+            height: 115%;
             width: 120%;
             left: 0%;
-            transform: translateY(-60%);
             transform: translateY(-56%);
             border-radius: 3%;
             background: url("../imgs//IMG_2844.jpeg");
@@ -332,6 +322,9 @@ h3 {
     .Mission  .container:hover .flap3::before {
         transform: translateX(-700px);
     }
+
+.content txt {
+}
     .content t1 {
         text-align: center;
         font-size: 30px;
@@ -342,6 +335,7 @@ h3 {
         font-size: 30px;
         font-family: 'Fredoka One', cursive;
     }
+
 
 .recent-charity {
     position: relative;
@@ -364,7 +358,7 @@ iframe {
     display: grid;
     grid-template-columns: auto auto;
     align-content: center;
-    top:280px;
+    top:320px;
     width:100%;
     border-radius:20%;
 }
@@ -372,78 +366,22 @@ iframe {
 }
 .photogalery {
 }
-    .photogalery imag1 {
+    .photogalery .photocontainer {
+        background-color:aliceblue;
     }
-        .photogalery imag1:hover {
 
-        }
+        .photogalery .photocontainer .img1 {
         
-        .photogalery imag1:before {
         }
 
-        .photogalery imag1:after {
-        }
+            .photogalery .photocontainer:hover .img1::before {
+                background-color:antiquewhite;
+            }
 
-    .photogalery imag2 {
-    }
-
-        .photogalery imag2:hover {
-
-        }
+        .photogalery .photocontainer .img2 {
         
-        .photogalery imag2:before {
         }
 
-        .photogalery imag2:after {
-        }
+            .photogalery .photocontainer:hover .img2 {
 
-    .photogalery imag3 {
-    }
-        .photogalery imag3:hover {
-        }
-
-        .photogalery imag3:before {
-        }
-
-        .photogalery imag3:after {
-        }
-
-
-    .photogalery imag4 {
-    }
-
-        .photogalery imag4:hover {
-        }
-
-        .photogalery imag4:before {
-        }
-
-        .photogalery imag4:after {
-        }
-
-
-
-    .photogalery imag5 {
-    }
-        .photogalery imag5:hover {
-        }
-        
-        .photogalery imag5:before {
-        }
-
-        .photogalery imag5:after {
-        }
-
-
-    .photogalery imag6 {
-    }
-
-        .photogalery imag6:hover {
-        }
-
-        .photogalery imag6:before {
-        }
-
-        .photogalery imag6:after {
-        }
-    
+            }
