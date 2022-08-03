@@ -1,0 +1,107 @@
+.view {
+    display: grid
+}
+/* duty cards*/
+.container {
+    position: relative;
+    left: -20%;
+    top: 30%;
+    transform: translate(-10%, 20%);
+    height: 600px;
+    width: 400px;
+    background: #f2f2f2;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 20px 8px #d0d0d0;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+
+.duty {
+    position: relative;
+    width: 40%;
+    transform: translateY(20%);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    height: auto;
+    padding: 120px;
+}
+
+    .duty t1 {
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Fredoka One', cursive;
+    }
+
+    .duty h3 {
+        width: auto;
+        font-size: 20px;
+    }
+
+
+
+.Mission {
+    position: relative;
+    display: grid;
+    grid-template-columns: 40% 40% 40%;
+    transform: translateY(-30%);
+    width: max-content;
+    height: max-content;
+}
+
+    .Mission container {
+        font-size: 30px;
+        position: relative;
+        padding: 10px;
+        font-family: 'Merriweather', serif;
+        height: max-content;
+    }
+
+    .Mission .container .flap {
+        width: 100%;
+        height: max-content;
+    }
+
+        .Mission .container .flap::before {
+            position: absolute;
+            content: "";
+            height: 110%;
+            width: 100%;
+            left: 0%;
+            transform: translateY(-50%);
+            border-radius: 3%;
+            background: url("../imgs/IMG_1399.jpeg");
+            background-repeat: no-repeat;
+            transition: 1.5s;
+        }
+
+    .Mission .container:hover .flap::before {
+        transform: translateX(-700px);
+    }
+
+
+.content txt {
+}
+
+.content t1 {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Fredoka One', cursive;
+}
+
+.content h5 {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Fredoka One', cursive;
+}
+
+
+.recent-charity {
+    position: relative;
+    transform: translateY(20%);
+    z-index: 0;
+}

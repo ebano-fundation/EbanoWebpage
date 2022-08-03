@@ -1,0 +1,36 @@
+ //hover cards
+ <div className="Mission">
+                        <div class="container">
+                            <div class="content">
+                                <t1 id='health'></t1>
+                                <h3 id='health-info'></h3>
+                            </div>
+                            <div class="flap"></div>
+                            <t1>
+                            </t1>
+                        </div>
+                        <div class="container">
+                            <div class="content">
+                                <t1 id='happines'></t1>
+                                <h3 id='happines-info'></h3>
+                            </div>
+                            <div class="flap2"></div>
+                        </div>
+
+                        <div class="container">
+                            <div class="content">
+                                <div className='txt'>
+                                    <div Style="background-color:rgb(38, 204, 140);  width:120%; posirion:relative; transform:translateX(-8%) ">
+                                        <center>
+
+                                            <t1 id='education' >
+                                            </t1>
+                                        </center>
+                                    </div>
+                                </div>
+                                <h3 id='education-info'></h3>
+                            </div>
+                            <div class="flap3">
+                            </div>
+                        </div>
+                    </div>

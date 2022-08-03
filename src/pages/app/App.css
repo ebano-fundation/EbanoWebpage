@@ -1,0 +1,38 @@
+/*//////////////////////////////// DEfault css  design  /////////////////////////////////////*/
+
+.App {
+    position:relative;
+    top:-16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+}
+
+    /*//////////////////// footer //////////////////////*/
+    footer {
+        background-color: rgb(0, 0, 0, 0.38);
+        width: 100%;
+        position:relative;
+        transform:translateY(100%)
+    }
+    .foter .foterlogo {
+        position:sticky;
+        height:88px;
+    }
+
+    .foter .left {
+        position: relative;
+        left: 500px;
+        top: 0px;
+    }
+
+.foter .centrl {
+    position: relative;
+    left: 1500px;
+    top: -110px;
+    width:stretch
+}
+
+

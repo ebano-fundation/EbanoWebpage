@@ -1,0 +1,242 @@
+.App {
+    position: relative;
+    top: -16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+}
+
+/*transition*/
+
+.transition {
+    position: relative;
+    transform: translateY(-70%);
+}
+
+    .transition .top-image {
+        width: 100%;
+        z-index: 1;
+    }
+
+.transition-down {
+    position: relative;
+    top: 190px;
+    transform: rotate(180deg);
+    width: fit-content;
+}
+
+.transition-down {
+    width: 100%;
+    z-index: 1;
+}
+
+/*/////////////////////////////  card  //////////////////////////////*/
+
+body {
+    position: relative;
+    top: -20px;
+}
+
+
+/* duty cards*/
+.container {
+    position: relative;
+    left: -20%;
+    top: 20%;
+    transform: translate(-10%, 20%);
+    height: 600px;
+    width: 400px;
+    background: #f2f2f2;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 20px 8px #d0d0d0;
+    display: grid;
+}
+
+
+h3 {
+    font-size: 30px;
+}
+
+
+.duty {
+    position: relative;
+    background-size: 25%;
+    background: url("../../imgs/do-03.png");
+    background-repeat: no-repeat;
+    height: auto;
+    padding: 120px;
+}
+s
+    .duty t1 {
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Fredoka One', cursive;
+    }
+
+    .duty h3 {
+        width: auto;
+        font-size: 20px;
+    }
+
+
+
+.Mission {
+    position: relative;
+    display: flex;
+    transform: translateY(-30%);
+    width: max-content;
+    height: max-content;
+}
+
+    .Mission container {
+        font-size: 30px;
+        position: relative;
+        padding: 10px;
+        font-family: 'Merriweather', serif;
+        height: max-content;
+    }
+
+    .Mission .container .flap {
+        width: 100%;
+        height: max-content;
+    }
+
+        .Mission .container .flap::before {
+            position: absolute;
+            content: "";
+            height: 110%;
+            width: 100%;
+            left: 0%;
+            transform: translateY(-50%);
+            border-radius: 3%;
+            background: url("../../imgs//IMG_1399.jpeg");
+            background-repeat: no-repeat;
+            transition: 1.5s;
+        }
+
+    .Mission .container:hover .flap::before {
+        transform: translateX(-700px);
+    }
+
+    .Mission .container .flap2 {
+        width: 150%;
+        height: 150%;
+    }
+
+        .Mission .container .flap2::before {
+            position: absolute;
+            content: "";
+            height: 115%;
+            width: 120%;
+            left: 0%;
+            transform: translateY(-56%);
+            border-radius: 3%;
+            background: url("../../imgs/IMG_2844.jpeg");
+            background-repeat: no-repeat;
+            transition: 1.5s;
+        }
+
+    .Mission .container:hover .flap2::before {
+        transform: translateX(-700px);
+    }
+
+    .Mission .container .flap3 {
+        width: 100%;
+        height: 100%;
+    }
+
+        .Mission .container .flap3::before {
+            position: absolute;
+            content: "";
+            height: 120%;
+            width: 100%;
+            left: 0%;
+            transform: translateY(-60%);
+            border-radius: 3%;
+            background: url("../../imgs/IMG_2846.jpeg");
+            background-repeat: no-repeat;
+            transition: 1.5s;
+        }
+
+    .Mission .container:hover .flap3::before {
+        transform: translateX(-700px);
+    }
+
+.content txt {
+}
+
+.content t1 {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Fredoka One', cursive;
+}
+
+.content h5 {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Fredoka One', cursive;
+}
+
+
+.recent-charity {
+    position: relative;
+    transform: translateY(20%);
+    z-index: 0;
+}
+
+
+/*////////////////////i frame for youtube video ///////////////////////////*/
+iframe {
+    width: 100%;
+    height: 850px;
+}
+
+
+/***************************** photogalery ***********************************/
+.phototeca {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-content: center;
+    top: 320px;
+    width: 100%;
+    border-radius: 20%;
+}
+
+    .phototeca .imageshower {
+    }
+
+.photogalery {
+}
+
+    .photogalery .photocontainer {
+        background-color: aliceblue;
+        display:flow
+    }
+
+        .photogalery .photocontainer .img1 {
+        }
+
+        .photogalery .photocontainer:hover .img1::before {
+            background-color: antiquewhite;
+        }
+        .photogalery .photocontainer:hover .img1::after {
+            background-color:aqua
+        }
+
+        .photogalery .photocontainer .img2 {
+        }
+
+        .photogalery .photocontainer:hover .img2 {
+        }
+
+
+/* /// media  \\\ */
+
+
+@media screen and (max-width:1315) and (max-heigth:980) {
+}
