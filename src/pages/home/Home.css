@@ -67,6 +67,8 @@ h3 {
     background-size: 25%;
     background: url("../../imgs/do-03.png");
     background-repeat: no-repeat;
+    width:15vmin;
+    margin-left:20%;
     height: auto;
     padding: 120px;
 }
@@ -194,46 +196,6 @@ iframe {
     width: 100%;
     height: 850px;
 }
-
-
-/***************************** photogalery ***********************************/
-.phototeca {
-    position: relative;
-    display: grid;
-    grid-template-columns: auto auto;
-    align-content: center;
-    top: 320px;
-    width: 100%;
-    border-radius: 20%;
-}
-
-    .phototeca .imageshower {
-    }
-
-.photogalery {
-}
-
-    .photogalery .photocontainer {
-        background-color: aliceblue;
-        display:flow
-    }
-
-        .photogalery .photocontainer .img1 {
-        }
-
-        .photogalery .photocontainer:hover .img1::before {
-            background-color: antiquewhite;
-        }
-        .photogalery .photocontainer:hover .img1::after {
-            background-color:aqua
-        }
-
-        .photogalery .photocontainer .img2 {
-        }
-
-        .photogalery .photocontainer:hover .img2 {
-        }
-
 
 /* /// media  \\\ */
 

@@ -5,7 +5,13 @@ import {Link } from "react-router-dom";
 import './Home.css'
 
 // languaje
-import lang from '../../JS/languajes'
+import hometranslator from '../../JS/Hometranslator'
+
+
+//importing pages
+
+import Carrousel from '../../Components/Carrousel/Carrousel'
+//import photogalery from '../../Components/photogalery/photogalery';
 
 /*
 state =
@@ -20,42 +26,11 @@ showModal = () => { this.setState({showModal: true}) }
 const home = () =>
 {
     return (
-        <html onload={lang}>
+        <html onload={hometranslator}>
             <title id= "Home"></title>
 
             {/*image carrouseel*/}
-            <div>
-                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="https://picsum.photos/1080/500" onClick="gotourl()" class="d-block w-100" alt="..." />
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 id="slide1"></h5>
-                                <p id="slide1-info" ></p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <iframe onClick="gotourl()" width="1920" height="820" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;  picture-in-picture" allowfullscreen></iframe>
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 id="slide2"></h5>
-                                <p id="slide2-info" ></p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://picsum.photos/1080/500" onClick="" class="d-block w-100" alt="..." />
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 id="slide3"></h5>
-                                <p id="slide3-info" ></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <Carrousel/>
             {/* */}
 
                 { /* image of broken page*/}
@@ -72,12 +47,10 @@ const home = () =>
 
                     { /*welcome to ebano  div */}
                     <div classname="container2 ">
-                        <center>
                             <div className='duty'>
                                 <h3 id="welcome"></h3>
                                 <t1 id='goals'></t1>
                             </div>
-                        </center>
                     </div>
 
                     { /* hover card */}
@@ -131,19 +104,8 @@ const home = () =>
                     </div>
 
                     {/* photo galery*/}
-                    <div className="phototeca">
-                        <img className="imageshower" src="https://picsum.photos/943/840" alt="" />
-                        <div className="photogalery">
-                            <div className="photocontainer">
-                                <img className="img1" src="https://picsum.photos/320/420" alt="" />
-                                <img className="img2" src="https://picsum.photos/320/420" alt="" />
-                                <img className="img3" src="https://picsum.photos/320/420" alt="" />
-                                <img className="img4" src="https://picsum.photos/320/420" alt="" />
-                                <img className="img5" src="https://picsum.photos/320/420" alt="" />
-                                <img className="img6" src="https://picsum.photos/320/420" alt="" />
-                            </div>
-                        </div>
-                    </div>
+                    {/*< photogalery />*/}
+                    { /* end photo galery*/}
                 </center>
             </body>
         </html>

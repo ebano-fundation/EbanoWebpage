@@ -10,4 +10,7 @@
   "webRoot": "C:\\Users\\Administrator\\source\\repos\\React\\EbanoFundationWebpage\\EbanoFundationWebpage"
 }</LaunchJsonTarget>
   </PropertyGroup>
+  <PropertyGroup>
+    <PromptedForEslintCapability>true</PromptedForEslintCapability>
+  </PropertyGroup>
 </Project>

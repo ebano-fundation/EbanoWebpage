@@ -2,6 +2,7 @@ import react from 'react';
 import { Navigation } from 'react-router-dom';
 import { Button } from 'reactstrap';
 import Missions from '../Missions';
+import Carrousel from '../../Components/Carrousel/Carrousel'
 
 //css
 
@@ -12,38 +13,7 @@ const Charity = () =>
         <html>
             <header>
                 {/*image carrouseel*/}
-                <div>
-                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="https://picsum.photos/1080/500" onClick="gotourl()" class="d-block w-100" alt="..." />
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 id="slide1"></h5>
-                                    <p id="slide1-info" ></p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <iframe onClick="gotourl()" width="1920" height="820" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;  picture-in-picture" allowfullscreen></iframe>
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 id="slide2"></h5>
-                                    <p id="slide2-info" ></p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://picsum.photos/1080/500" onClick="" class="d-block w-100" alt="..." />
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5 id="slide3"></h5>
-                                    <p id="slide3-info" ></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <Carrousel/>
                 {/* */}
 
                 { /* image of broken page*/}

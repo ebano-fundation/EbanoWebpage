@@ -11,12 +11,18 @@
     <Script Include="**" Exclude="*.esproj;**\node_modules\**" />
   </ItemGroup>
   <ItemGroup>
+    <Script Remove="src\Components\Footer\**" />
+    <Script Remove="src\Components\Navbar\**" />
     <Script Remove="src\JS\NewFolder\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Script Remove="src\JS\Homelanguaje.tsx" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="src\JS\NewFolder1\" />
     <Folder Include="src\NewFolder1\" />
     <Folder Include="src\NewFolder2\" />
+    <Folder Include="src\NewFolder3\" />
     <Folder Include="src\resources\" />
     <Folder Include="src\NewFolder\" />
     <Folder Include="src\pages\NewFolder\" />

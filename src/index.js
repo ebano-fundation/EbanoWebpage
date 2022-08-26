@@ -12,10 +12,10 @@ import reportWebVitals from './reportWebVitals';
 import { lang } from './JS/languajes'
 
 //import Header
-import Cabeza from './pages/encabezado/Encabezado';
+import Cabeza from './Components/encabezado/Encabezado';
 
 //import Footer
-import Pie from './pages/pie/Pie';
+import Pie from './Components/pie/Pie';
 
 // import App (home)
 import App from './App';

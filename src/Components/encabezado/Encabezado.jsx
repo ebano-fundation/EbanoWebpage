@@ -26,8 +26,8 @@ import logo from "../../imgs/EbanoLogo.bmp"
 
 
 //importing the donation pop up page 
-import Donate from '../donate/Donate';
-import Pop from '../../pages/modal/Modal';
+import Donate from '../../pages/donate/Donate';
+import Pop from './../modal/Modal';
 
 //importing the redirection page
 //import redirection from '../Redirect'
@@ -46,7 +46,7 @@ function DetectScroll() {
 
 //para hacer que el boton donate muestre el modal ubicado en otra pagina debemos 
 //hacer 2 cosas 1 crear un puntero o 2 hacer qe el boton redirige a la pagina 
-//pero en mejor hacer un puntero 
+//pero es mejor hacer un puntero 
 
 //let navigation = Navigate;
 
