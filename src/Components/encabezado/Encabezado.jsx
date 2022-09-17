@@ -7,6 +7,13 @@ import { Button } from 'react-bootstrap';
 
 //css
 import './Encabezado.css'
+import Container from 'react-bootstrap/Container';
+import Form from 'react-bootstrap/Form';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Offcanvas from 'react-bootstrap/Offcanvas';
+
 
 
 //import paypal things
@@ -68,37 +75,60 @@ function Cabeza ({ navigation }) {
     let navigate = useNavigate();
     return (
 
-        <div >
-            <header>
-                <div>
-                    <ul className="itemlist">
-                        <img src={logo} className="nabar App-logo" alt="logo" onClick={() => { navigate('/') }} />
-                        <li className="item" > <Button id="store" class = "primary" className="store" path="Redirection" variant="success" onClick={() => { navigate('redirection') }} > visit our store</Button></li>
-                        <li className="item" > <Donate/> </li> 
-                        <li className="item" id="charity" onClick={() => { navigate('Charity') }}> <h1>Charity</h1> </li>
-                        <li className="item" id="Abbout" onClick={() => { navigate('Abbout') }}> <h1> Abbout </h1></li>
-                        <li className="item" id="home" onClick={() => { navigate('/') }}> <h1> Home</h1> </li>
-                    </ul>
-                </div>
-            </header>
-            {isOpen && <Pop
-                content={<>
-                    <div>
-                        <div>
-                            <pt1>Doante</pt1>
-                        </div>
-                        <div>
-                            <div className="DonationMethod">
-                                
-                            </div>
-                            
-                        </div>
-                     </div>
-                </>}
-                handleClose={togglePopup}
-            />}
+        <>
+                <Navbar bg="light" className="mb-3 navlay">
+                <Container fluid>
+                    <Navbar.Brand className="logo" href="#page" onClick={() => { navigate('/') }}> <img src={logo} className="App-logo" alt="logo" onClick={() => { navigate('/') }} /> Ebano fundation</Navbar.Brand>
+                        <Navbar.Toggle/>
+                        <Navbar.Offcanvas
+                            placement="end"
+                        >
+                            <Offcanvas.Header closeButton>
+                                <Offcanvas.Title >
+                                    Offcanvas
+                                </Offcanvas.Title>
+                            </Offcanvas.Header>
+                            <Offcanvas.Body>
+                                <Nav className="justify-content-end flex-grow-1 pe-5 pos">
+                                <Nav.Link classname="home1" href="#page" onClick={() => { navigate('/') }}><ho1>home</ho1></Nav.Link>
+                                <Nav.Link classname="abbout1" href="#About" onClick={() => { navigate('abbout') }}><a1>About</a1></Nav.Link>
+                                <Nav.Link classname="work1" href="#charity" onClick={() => { navigate('Charity') }}><work1>Our work</work1></Nav.Link>
+                                    <NavDropdown className= "colab1"
+                                        title="colaborations"
+                                    >
+                                        {/* to add other colaboration just copi and paste the line below */ }
+                                    <NavDropdown.Item href="#action3" onClick={() => { navigate('evida') }}>Ebano / Mision vida</NavDropdown.Item>
+                                        { /* to make a divider use this  <NavDropdown.Divider /> */}
+                                    </NavDropdown>
+                            </Nav>
+                            <Nav>
+                                <Nav.Link href="#donate"><Donate /></Nav.Link>
+                                <Nav.Link eventKey={2} href="#redirect">
+                                    <Button id="store" class="primary" className="store" path="Redirection" variant="success" onClick={() => { navigate('redirection') }} > visit our store</Button>
+                                </Nav.Link>
+                            </Nav>
+                            </Offcanvas.Body>
+                        </Navbar.Offcanvas>
+                        {isOpen && <Pop
+                            content={<>
+                                <div>
+                                    <div>
+                                        <pt1>Donate</pt1>
+                                    </div>
+                                    <div>
+                                        <div className="DonationMethod">
 
-        </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </>}
+                            handleClose={togglePopup}
+                        />}
+                    </Container>
+                </Navbar>
+        </>
+           
 
 
     )

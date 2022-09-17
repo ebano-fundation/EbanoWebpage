@@ -74,7 +74,6 @@ h3 {
             left: 0%;
             transform: translateY(-50%);
             border-radius: 3%;
-            background: url("../imgs/IMG_1399.jpeg");
             background-repeat: no-repeat;
             transition: 1.5s;
         }

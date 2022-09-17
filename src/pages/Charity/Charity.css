@@ -1,5 +1,56 @@
 body {
 }
 
-.charities {
+/*transition*/
+
+.transition {
+    position: relative;
+    transform: translateY(-90%);
+}
+
+    .transition .top-image {
+        width: 100%;
+        z-index: 4;
+    }
+
+
+
+.backi {
+    margin-top:-3%;
+    background-color: red;
+}
+.photogalery {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+    .photogalery .container {
+        position: relative;
+        align-content: center;
+        width: 100%;
+        height: 50%
+    }
+
+        .photogalery .container .bigpicture {
+        }
+
+
+.thumbnail {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+    .thumbnail .container {
+        align-content: center;
+        align-items: self-end;
+        background-color: red;
+    }
+
+.th1:hover {
+  bigpicture
+{
+    background-image: "https://picsum.photos/id/1010/200/300";
+}
 }

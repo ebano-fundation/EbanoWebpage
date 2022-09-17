@@ -14,11 +14,11 @@ function ReactComponent() {
             document.getElementById("goals").innerHTML = "we are here to bring the posibilities for al the kids in the island";
 
             document.getElementById("Health").innerHTML = "Health";
-            document.getElementById("Healthbio").innerHTML = "we try to bring the medical help to all unfortunated kids in our island";
+            document.getElementById("Healthbio").innerHTML = "supplying the kids with medicine and health care";
             document.getElementById("Education").innerHTML = "Education";
-            document.getElementById("Educationbio").innerHTML = "we dedicate our time to bring the tools to open the educational breach to all unfotunated kids in our island";
+            document.getElementById("Educationbio").innerHTML = "dedicating our time to bring the tools to open the educational breach to all unfotunated kids in our island";
             document.getElementById("Happiness").innerHTML = "Happines";
-            document.getElementById("Happinessbio").innerHTML = "we have the duty to bring the happines to unhappy kids";
+            document.getElementById("Happinessbio").innerHTML = "bringing happines to unhappy kids";
             break
 
         case 'es':

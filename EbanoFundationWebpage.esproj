@@ -3,7 +3,7 @@
     <ProjectGuid>86f62829-3cba-416a-962b-edbebb353b9c</ProjectGuid>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupCommand>set BROWSER=none&amp;&amp;npm start</StartupCommand>
+    <StartupCommand>set BROWSER=brave&amp;&amp;npm run start</StartupCommand>
     <JavaScriptTestRoot>src\</JavaScriptTestRoot>
     <JavaScriptTestFramework>Jest</JavaScriptTestFramework>
   </PropertyGroup>
@@ -13,7 +13,9 @@
   <ItemGroup>
     <Script Remove="src\Components\Footer\**" />
     <Script Remove="src\Components\Navbar\**" />
+    <Script Remove="src\imgs\NewFolder\**" />
     <Script Remove="src\JS\NewFolder\**" />
+    <Script Remove="src\pages\NewFolder1\**" />
   </ItemGroup>
   <ItemGroup>
     <Script Remove="src\JS\Homelanguaje.tsx" />

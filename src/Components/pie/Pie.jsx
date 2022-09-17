@@ -7,8 +7,8 @@ import './Pie.css';
 
 const Pie = () => {
         return (
-            <div className='App'>
-                <div class="container-fluid text-center text-white bg-dark p-3">
+            <div className='pie'>
+                <div class="container-fluid text-center text-white bg-dark p-4">
                     <p class="smallest" className='bio'>© 2022 Ebano Fundation - Todos los derechos reservados.</p>
                     <div className='Social'>
                         <a href='https://www.google.com'><img className='fb' src='../../icons/facebook.png' alt='Facebook' /></a>
@@ -18,6 +18,6 @@ const Pie = () => {
                     </div>
                 </div>
             </div>
-        );
+        )
 };
 export default Pie;

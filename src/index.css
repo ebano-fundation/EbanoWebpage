@@ -1,0 +1,25 @@
+body {
+    align-items: center;
+}
+.navlay{
+    z-index:3;
+}
+
+.layout {
+    z-index:1;
+    margin-top:-2%;
+}
+
+.bgi {
+    position:fixed;
+    z-index: -2;
+    margin-top:7%;
+    margin-left:38%;
+}
+.pie{
+}
+
+.appage{
+    z-index: 3;
+    
+}

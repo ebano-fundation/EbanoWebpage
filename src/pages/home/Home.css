@@ -1,11 +1,14 @@
 .App {
     position: relative;
-    top: -16px;
+    top: -70px;
     text-align: center;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     font-size: calc(10px + 2vmin);
+}
+body {
+    height:33%;
+    background-color:transparent;
 }
 
 /*transition*/
@@ -17,7 +20,7 @@
 
     .transition .top-image {
         width: 100%;
-        z-index: 1;
+        z-index: 4;
     }
 
 .transition-down {
@@ -29,62 +32,71 @@
 
 .transition-down {
     width: 100%;
-    z-index: 1;
+    z-index: 4;
 }
 
-/*/////////////////////////////  card  //////////////////////////////*/
-
-body {
-    position: relative;
-    top: -20px;
+/*//////// Welcome section \\\\\\\\\\ */
+.welcomesection {
+    background-color: white;
 }
 
 
 /* duty cards*/
-.container {
+.welcomecontainer {
+    width:100vmin;
+    margin-top: -11%;
+    margin-bottom: -25px;
     position: relative;
-    left: -20%;
-    top: 20%;
-    transform: translate(-10%, 20%);
-    height: 600px;
-    width: 400px;
-    background: #f2f2f2;
-    overflow: hidden;
-    border-radius: 20px;
-    cursor: pointer;
-    box-shadow: 0 0 20px 8px #d0d0d0;
-    display: grid;
 }
 
-
-h3 {
-    font-size: 30px;
-}
-
-
-.duty {
-    position: relative;
-    background-size: 25%;
-    background: url("../../imgs/do-03.png");
-    background-repeat: no-repeat;
-    width:15vmin;
-    margin-left:20%;
-    height: auto;
-    padding: 120px;
-}
-s
-    .duty t1 {
-        text-align: center;
-        font-size: 30px;
-        font-family: 'Fredoka One', cursive;
+    .welcomecontainer .welcomeh3 {
+        margin-top: 15%;
+        transform: translateY(75px);
+        font-size: 54px;
+        font-family: 'Fredoka One'
     }
+    .welcomecontainer .welccomeh2 {
+        margin-top:10%
 
-    .duty h3 {
-        width: auto;
-        font-size: 20px;
+    }
+    
+
+
+.presentation {
+    height: fit-content;
+    z-index: 3;
+}
+
+    .presentation .presncon {
+
     }
 
 
+        .presentation .presncon .rd {
+            position: relative;
+            background-size: 25%;
+            width: 50vmin;
+            height: auto;
+
+        }
+
+.goaltext {
+    width:300px;
+    background-color:blue;
+}
+
+
+        .presentation .presncon .goaltext .goal {
+            position: absolute;
+            margin-top: -10%;
+            left: 25%;
+            text-align: justify;
+            font-size: 25px;
+            font-family: 'Fredoka One', cursive;
+        }
+
+
+/*/////////////////////////////  card  //////////////////////////////*/
 
 .Mission {
     position: relative;
@@ -102,6 +114,8 @@ s
         height: max-content;
     }
 
+
+
     .Mission .container .flap {
         width: 100%;
         height: max-content;
@@ -109,15 +123,14 @@ s
 
         .Mission .container .flap::before {
             position: absolute;
-            content: "";
-            height: 110%;
-            width: 100%;
+            height: 115%;
+            width: 120%;
             left: 0%;
-            transform: translateY(-50%);
+            margin-top: -6%;
             border-radius: 3%;
-            background: url("../../imgs//IMG_1399.jpeg");
+            background: url("../../imgs/health.png");
             background-repeat: no-repeat;
-            transition: 1.5s;
+            transition: 1s;
         }
 
     .Mission .container:hover .flap::before {
@@ -125,8 +138,8 @@ s
     }
 
     .Mission .container .flap2 {
-        width: 150%;
-        height: 150%;
+        width: 100%;
+        height: 100%;
     }
 
         .Mission .container .flap2::before {
@@ -137,9 +150,9 @@ s
             left: 0%;
             transform: translateY(-56%);
             border-radius: 3%;
-            background: url("../../imgs/IMG_2844.jpeg");
+            background: url("../../imgs/happy.png");
             background-repeat: no-repeat;
-            transition: 1.5s;
+            transition: 1s;
         }
 
     .Mission .container:hover .flap2::before {
@@ -157,19 +170,51 @@ s
             height: 120%;
             width: 100%;
             left: 0%;
-            transform: translateY(-60%);
+            transform: translateY(-57%);
             border-radius: 3%;
-            background: url("../../imgs/IMG_2846.jpeg");
+            background: url("../../imgs/Education.png");
             background-repeat: no-repeat;
-            transition: 1.5s;
+            transition: 1.2s;
         }
 
     .Mission .container:hover .flap3::before {
         transform: translateX(-700px);
     }
 
-.content txt {
+
+.description {
+    margin-top:50%;
+    align-content:center;
+    font-size: 30px;
+    font-family: 'Fredoka One', cursive;
 }
+
+    .description .discoverhealth:hover {
+        transition: 1s;
+        background-color: rgb(4,213,237);
+    }
+    .description .discoverhappines:hover {
+        transition: 1s;
+        background-color: rgb(255,255,0);
+    }
+    .description .discovereducation:hover {
+        transition: 1s;
+        background-color: rgb(50, 205, 50);
+    }
+
+
+
+
+/*//////////////////////////  welcome  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+
+
+
+
+
+
+    .content txt {
+    }
 
 .content t1 {
     text-align: center;
@@ -188,6 +233,27 @@ s
     position: relative;
     transform: translateY(20%);
     z-index: 0;
+}
+
+
+/*///////////////////// mobile ///////////////////////////*/
+
+@media (max-width: 1000px) {
+    .Mission {
+        position: relative;
+        display: grid;
+        transform: translateY(-30%);
+        width: max-content;
+        height: max-content;
+    }
+
+        .Mission container {
+            font-size: 30px;
+            position: relative;
+            padding: 10px;
+            font-family: 'Merriweather', serif;
+            height: max-content;
+        }
 }
 
 

@@ -20,7 +20,12 @@ import Pie from './Components/pie/Pie';
 // import App (home)
 import App from './App';
 
+//import css
+import './index.css'
 
+//importing logo
+
+import Logo from './imgs/EbanoLogo.bmp';
 
 //importing the cascade stile StyleSheet
 
@@ -29,10 +34,13 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode onload={lang}>
         <BrowserRouter>
-            <Cabeza />
-            <App />
-            <Pie />
-        </BrowserRouter>
+            <Cabeza className ="navlay" />
+                <div className='layout'>
+                    <img className='bgi' src={Logo} />
+                    <App className ="appage" />
+                </div>
+                <Pie className ='pie' />
+            </BrowserRouter>
     </React.StrictMode>
 );
 reportWebVitals();
